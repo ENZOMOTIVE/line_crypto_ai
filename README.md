@@ -1,7 +1,7 @@
 
 <div align="center">
 <h1> Scan this to use the bot</h1>
-<img src="./public/bot-invite.png" alt="GOAT" width="100px" height="auto" style="object-fit: contain;">
+<img src="./line-bot/public/bot-invite.png" alt="GOAT" width="300px" height="auto" style="object-fit: contain;">
 </div>
 
 # AI Wallet :Line Bot
@@ -62,8 +62,8 @@ In production, developers require advanced wallet setups that utilize [smart wal
 
 <div align="center gap-2">
 <h1> Scan this to use the bot</h1>
-<img src="./public/Proof-1.png" alt="GOAT" width="200px" height="auto" style="object-fit: contain;">
-<img src="./public/Proof-2.png" alt="GOAT" width="200px" height="auto" style="object-fit: contain;">
+<img src="../line_crypto_ai/line-bot/public/Proof-1.png" alt="GOAT" width="200px" height="auto" style="object-fit: contain;">
+<img src="./line-bot//public/Proof-2.png" alt="GOAT" width="200px" height="auto" style="object-fit: contain;">
 </div>
 
 
