@@ -6,7 +6,7 @@
 
 ### 📲 Scan this QR to try the bot  
 
-<img src="./line-bot/public/bot-invite.png" alt="Invite QR" width="280px" height="auto" style="object-fit: contain;">
+<img src="./line-bot//public/bot-invite.png" alt="Invite QR" width="280px" height="auto" style="object-fit: contain;">
 
 [![Made with TypeScript](https://img.shields.io/badge/Made%20with-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)  
 [![Powered by GOAT SDK](https://img.shields.io/badge/Powered%20by-GOAT%20SDK-8A2BE2?style=flat&logoColor=white)](https://docs.goat-sdk.com/)  
