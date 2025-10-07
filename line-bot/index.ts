@@ -58,7 +58,7 @@ let tools: any;
   tools = await getOnChainTools({
     wallet: viem(walletClient),
     plugins: [
-      kiraPayPlugin("kira-pay-api-key")
+      kiraPayPlugin(process.env.KIRA_PAY_API!)
     ],
   });
 })();
