@@ -1,5 +1,5 @@
 
-<div align="center">
+<div style="text-align: center;">
   
 # 🤖 AI Wallet : Line Bot  
 ### Your AI-powered crypto assistant, directly inside LINE  
@@ -18,25 +18,32 @@
 
 ## 🌍 Overview  
 
-Managing crypto shouldn’t feel like rocket science.  
-This project brings **AI + Blockchain** together inside the **LINE messenger app** to make crypto accessible:  
+**KIRA-LINEAI Wallet : Line Bot** is an AI-powered assistant built for **LINE**, designed to simplify blockchain and crypto operations for users.  
 
-✅ Check balances (ETH & ERC-20 tokens)  
-✅ Send tokens with natural language  
-✅ Manage wallets securely  
-✅ All without memorizing complex commands  
+While LINE is similar to WhatsApp in terms of chatting, it offers many more features. This bot leverages those capabilities to provide a seamless crypto experience.  
+
+### What it does:
+
+- 🏦 **Wallet Management** – Create, manage, and monitor wallets directly from chat.  
+- 💱 **Crypto Operations** – Perform swaps, trading, and payments without memorizing commands.  
+- 🔗 **Payment Integrations with KiraPay** – Generate payment links, accept multi-chain payments, and track transactions — all handled seamlessly by the AI Wallet bot.  
+- 🤖 **AI Assistance** – The bot guides users step by step, making blockchain operations accessible to everyone.  
+
+### How KiraPay Helps
+KiraPay is a multi-chain payment layer for Web3 projects. By integrating KiraPay:  
+
+- ⚡ **Multi-Chain In, One-Chain Out** – Accept payments from multiple networks, settled in your preferred chain.  
+- 📊 **Transparent & On-Chain** – Every transaction is verifiable with rich payload data.  
+- 🛠 **Developer-Friendly** – REST APIs available now, SDKs (Node.js, TypeScript, frontend) coming soon.  
+
+**In short:** Users can manage wallets, perform transactions, and accept payments entirely through chat, while the AI Wallet bot and KiraPay handle the complexity behind the scenes — making crypto operations smooth, safe, and user-friendly.
 
 ---
 
-
-### Integrating KiraPay with AI Wallet  
-
-Using our **KiraPay plugin**, your LINE AI Wallet can now generate payment links, track payments, and manage multi-chain settlements directly from chat.
-
 ## 💳 About KiraPay
 
-Welcome to **KiraPay** — a multi-chain payment layer for Web3 projects, platforms, and communities.  
-With KiraPay, your users can pay in any supported blockchain, while you always receive funds settled in your preferred chain — simple, transparent, and seamless.  
+**KiraPay** is a multi-chain payment layer for Web3 projects, platforms, and communities.  
+With KiraPay, your users can pay using any supported blockchain, while you always receive funds settled in your preferred chain — simple, transparent, and seamless.  
 
 ### Why KiraPay?
 
