@@ -1,20 +1,63 @@
 
 <div align="center">
-<h1> Scan this to use the bot</h1>
-<img src="./line-bot/public/bot-invite.png" alt="GOAT" width="300px" height="auto" style="object-fit: contain;">
+  
+# 🤖 AI Wallet : Line Bot  
+### Your AI-powered crypto assistant, directly inside LINE  
+
+### 📲 Scan this QR to try the bot  
+
+<img src="./line-bot/public/bot-invite.png" alt="Invite QR" width="280px" height="auto" style="object-fit: contain;">
+
+[![Made with TypeScript](https://img.shields.io/badge/Made%20with-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)  
+[![Powered by GOAT SDK](https://img.shields.io/badge/Powered%20by-GOAT%20SDK-8A2BE2?style=flat&logoColor=white)](https://docs.goat-sdk.com/)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 </div>
 
-# AI Wallet :Line Bot
-## A line based AI assistant to manage your Crypto
+---
 
-In the Present Scenario users are struggling to understand the complex concepts of the Blockchain and crypto currency. 
-This project is to bridge the gap between Complex Blockchain Op
+## 🌍 Overview  
 
-## Setup
-1. Clone the repository:
+Managing crypto shouldn’t feel like rocket science.  
+This project brings **AI + Blockchain** together inside the **LINE messenger app** to make crypto accessible:  
+
+✅ Check balances (ETH & ERC-20 tokens)  
+✅ Send tokens with natural language  
+✅ Manage wallets securely  
+✅ All without memorizing complex commands  
+
+---
+
+
+### Integrating KiraPay with AI Wallet  
+
+Using our **KiraPay plugin**, your LINE AI Wallet can now generate payment links, track payments, and manage multi-chain settlements directly from chat.
+
+## 💳 About KiraPay
+
+Welcome to **KiraPay** — a multi-chain payment layer for Web3 projects, platforms, and communities.  
+With KiraPay, your users can pay in any supported blockchain, while you always receive funds settled in your preferred chain — simple, transparent, and seamless.  
+
+### Why KiraPay?
+
+- 🔗 **Payment Links & APIs** – Share a link or integrate directly to start collecting payments.  
+- ⚡ **Multi-Chain In, One-Chain Out** – Accept payments from multiple networks, get settled where you want.  
+- 📊 **Transparent & On-Chain** – Every transaction is verifiable, with rich payload data.  
+- 🛠 **Developer-Friendly** – REST APIs today, SDKs (Node.js, TypeScript, frontend) coming soon.  
+
+> With KiraPay, payments are no longer a headache — they’re seamless, chain-agnostic, and settlement-optimized.
+
+
+## ⚡ Quick Start
+
+### 1. Clone the repository
 ```bash
 git clone "https://github.com/ENZOMOTIVE/line_crypto_ai"
+cd line-bot
 ```
+
+
+
 
 2. Run the following commands from the `typescript` directory:
 ```bash
@@ -48,22 +91,12 @@ pnpm ts-node index.ts
 - Send ERC-20 tokens to another address
 - Check your balance again to see the tokens you just sent
 
-## Using in production
-In production, developers require advanced wallet setups that utilize [smart wallets](https://docs.goat-sdk.com/concepts/smart-wallets), which allow them to:
-1. **Increase security** by setting programmable permissions (e.g. limiting fund amounts, restricting contract interactions, and defining required signatures)
-2. **Maintain regulatory compliance** by ensuring agent wallets are non-custodial. This means that:
-     - Launchpads, wallet providers, or agent platforms never have access to agents' wallets.
-     - Agent platforms do not require money transmitter licenses.
 
-## Currenct Progress:
+### 🖼 Proof of Work  
 
+<img src="../line_crypto_ai/line-bot/public/Proof-1.png" alt="Proof-1" width="240px" style="margin:10px;"/> 
+<img src="./line-bot/public/Proof-2.png" alt="Proof-2" width="240px" style="margin:10px;"/>
 
-
-
-<div align="center gap-2">
-<h1> Scan this to use the bot</h1>
-<img src="../line_crypto_ai/line-bot/public/Proof-1.png" alt="GOAT" width="200px" height="auto" style="object-fit: contain;">
-<img src="./line-bot//public/Proof-2.png" alt="GOAT" width="200px" height="auto" style="object-fit: contain;">
 </div>
 
 

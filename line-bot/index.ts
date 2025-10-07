@@ -10,6 +10,8 @@ import { baseSepolia } from "viem/chains";
 import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
 import { viem } from "@goat-sdk/wallet-viem";
 
+import {kiraPayPlugin} from "./kira-pay-plugin/kira-pay"
+
 
 dotenv.config();
 
@@ -55,7 +57,9 @@ let tools: any;
 (async () => {
   tools = await getOnChainTools({
     wallet: viem(walletClient),
-    plugins: [],
+    plugins: [
+      kiraPayPlugin("kira-pay-api-key")
+    ],
   });
 })();
 
