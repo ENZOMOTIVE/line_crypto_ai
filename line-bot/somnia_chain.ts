@@ -1,6 +1,4 @@
-import { defineChain } from 'viem'
- 
-export const somnia_testnet = defineChain({
+export const somnia_testnet = {
   id: 50312,
   name: 'Somnia Testnet (Shannon)',
   nativeCurrency: {
@@ -18,4 +16,4 @@ export const somnia_testnet = defineChain({
     default: { name: 'Explorer', url: 'https://shannon-explorer.somnia.network/' },
   }
  
-})
+}

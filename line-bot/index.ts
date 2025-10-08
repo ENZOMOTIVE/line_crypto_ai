@@ -6,34 +6,17 @@ import { openai } from "@ai-sdk/openai";
 import { generateText } from "ai";
 import { http, createWalletClient } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
-import { baseSepolia } from "viem/chains";
 import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
 import { viem } from "@goat-sdk/wallet-viem";
+import { somnia_testnet} from "./somnia_chain"
+ import {kiraPayPlugin} from "./kira-pay-plugin/kira-pay"
+import { new_privy_user} from "./privy-plugins/new_privyuser"
 
-import {kiraPayPlugin} from "./kira-pay-plugin/kira-pay"
 
 
 dotenv.config();
 
-const somnia_testnet = {
-  id: 50312,
-  name: 'Somnia Testnet (Shannon)',
-  nativeCurrency: {
-    decimals: 18,
-    name: 'Somnia Test Token',
-    symbol: 'STT',
-  },
-  rpcUrls: {
-    default: {
-      http: ['https://rpc.ankr.com/somnia_testnet']
-      
-    },
-  },
-  blockExplorers: {
-    default: { name: 'Explorer', url: 'https://shannon-explorer.somnia.network/' },
-  }
- 
-}
+
 
 // 1. Create a wallet client
 const account = privateKeyToAccount(process.env.WALLET_PRIVATE_KEY as `0x${string}`);
@@ -58,7 +41,8 @@ let tools: any;
   tools = await getOnChainTools({
     wallet: viem(walletClient),
     plugins: [
-      kiraPayPlugin(process.env.KIRA_PAY_API!)
+      kiraPayPlugin(process.env.KIRA_PAY_API!),
+       new_privy_user("your email - id")
     ],
   });
 })();
