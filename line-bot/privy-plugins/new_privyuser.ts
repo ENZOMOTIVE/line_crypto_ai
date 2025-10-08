@@ -1,10 +1,12 @@
 import { PluginBase, WalletClientBase, createTool, Chain } from "@goat-sdk/core";
 import {z} from "zod"
 import axios from "axios";
+import dotenv from "dotenv";
 
+dotenv.config(); 
 
-const PRIVY_APP_ID = 'cmghxtr9o00j5ju0cnqduwqk1';
-const PRIVY_APP_SECRET = '2PxYDV7PE6hvNBw7pz4EXQfQQ677i3DXAHmVUWJe1PnmiQfZXsezFzAHgdMZJv8jXuMYzfv7oRZJkWMp758FXLvr';
+const PRIVY_APP_ID = process.env.PRIVY_APP_ID!;
+const PRIVY_APP_SECRET = process.env.PRIVY_APP_SECRET!;
 
 
 

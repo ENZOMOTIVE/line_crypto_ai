@@ -42,7 +42,7 @@ let tools: any;
     wallet: viem(walletClient),
     plugins: [
       kiraPayPlugin(process.env.KIRA_PAY_API!),
-       new_privy_user("your email - id")
+       new_privy_user("skpadhy2010@gmail.com")
     ],
   });
 })();
