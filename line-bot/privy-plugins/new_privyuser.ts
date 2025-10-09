@@ -1,16 +1,13 @@
 import { PluginBase, WalletClientBase, createTool, Chain } from "@goat-sdk/core";
-import {z} from "zod"
+import { z } from "zod";
 import axios from "axios";
 import dotenv from "dotenv";
 
-dotenv.config(); 
+dotenv.config();
 
 const PRIVY_APP_ID = process.env.PRIVY_APP_ID!;
 const PRIVY_APP_SECRET = process.env.PRIVY_APP_SECRET!;
 
-
-
-// Create Privy Account for the first time users
 export class NewPrivyUser extends PluginBase<WalletClientBase> {
     private email: string;
 
@@ -25,35 +22,64 @@ export class NewPrivyUser extends PluginBase<WalletClientBase> {
         return [
             createTool(
                 {
-                    name: "create_privy_user",
-                    description: "Create a new Privy user by linking their email",
+                    name: "create_privy_user_and_wallet",
+                    description: "Create a new Privy user and Ethereum wallet",
                     parameters: z.object({}),
                 },
                 async () => {
+                    const encodedAuth = Buffer.from(`${PRIVY_APP_ID}:${PRIVY_APP_SECRET}`).toString('base64');
+
                     try {
-                        const response = await axios.post(
-                            'https://api.privy.io/v1/users',
+                        // 🔹 Step 1: Create new user
+                        const createUserResponse = await axios.post(
+                            "https://api.privy.io/v1/users",
                             {
                                 linked_accounts: [
-                                    { address: this.email, type: 'email' },
-                                ],
+                                    { type: "email", address: this.email } // required
+                                ]
                             },
                             {
                                 headers: {
-                                    'Authorization': `Basic ${Buffer.from(`${PRIVY_APP_ID}:${PRIVY_APP_SECRET}`).toString('base64')}`,
-                                    'Content-Type': 'application/json',
-                                    'privy-app-id': PRIVY_APP_ID,
+                                    "Authorization": `Basic ${encodedAuth}`,
+                                    "Content-Type": "application/json",
+                                    "privy-app-id": PRIVY_APP_ID,
                                 },
                             }
                         );
 
-                        if (response.status === 200) {
-                            return { success: true, message: 'User created successfully', data: response.data };
-                        } else {
-                            return { success: false, message: 'Failed to create user', data: response.data };
-                        }
+                        const userData = createUserResponse.data;
+                        const userId = userData.id;
+
+                        // 🔹 Step 2: Create Ethereum wallet
+                        const walletResponse = await axios.post(
+                            "https://api.privy.io/v1/wallets",
+                            {
+                                chain_type: "ethereum",
+                                owner: { user_id: userId },
+                            },
+                            {
+                                headers: {
+                                    "Authorization": `Basic ${encodedAuth}`,
+                                    "Content-Type": "application/json",
+                                    "privy-app-id": PRIVY_APP_ID,
+                                },
+                            }
+                        );
+
+                        const walletData = walletResponse.data;
+
+                        return {
+                            success: true,
+                            message: "Privy user and Ethereum wallet created successfully",
+                            user: userData,
+                            wallet: walletData,
+                        };
                     } catch (error: any) {
-                        return { success: false, message: 'Error creating user', error: error.message };
+                        return {
+                            success: false,
+                            message: "Error creating Privy user or wallet",
+                            error: error.response?.data || error.message,
+                        };
                     }
                 }
             ),

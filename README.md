@@ -93,9 +93,9 @@ pnpm ts-node index.ts
 ```
 
 2. Chat with the agent:
-- Check your balance for ERC-20 tokens
-- Send ERC-20 tokens to another address
-- Check your balance again to see the tokens you just sent
+- Create Wallet
+- Handle Multiple Wallet
+- Receive Crypto currencies
 
 
 
