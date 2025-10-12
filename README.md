@@ -94,5 +94,14 @@ npm ts-node index.ts
 - Create Autonomoius Payment Gateways Payment with KIRAPAY
 
 
+## Tech Stack
+| Layer            | Technology                |
+| :--------------- | :------------------------ |
+| 🤖 AI Processing | OpenAI GPT API            |
+| 💰 Payments      | KiraPay API               |
+| 💬 Messaging     | LINE Messaging API        |
+| 💻 Backend       | TypeScript + Node.js      |
+| 🔗 Blockchain    | Base / Ethereum (Sepolia) |
+| 🧠 Framework     | GOAT SDK                  |
 
 
