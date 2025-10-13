@@ -11,6 +11,7 @@ import { viem } from "@goat-sdk/wallet-viem";
 import { somnia_testnet} from "./somnia_chain"
  import {kiraPayPlugin} from "./kira-pay-plugin/kira-pay"
 import { new_privy_user} from "./privy-plugins/new_privyuser"
+import {SendTransactionPlugin} from "./privy-plugins/ethereum/sendtxn"
 
 
 
@@ -42,7 +43,8 @@ let tools: any;
     wallet: viem(walletClient),
     plugins: [
       kiraPayPlugin(process.env.KIRA_PAY_API!),
-       new_privy_user("skpadhy2010@gmail.com")
+       new_privy_user("skpadhy2010@gmail.com"),
+       SendTransactionPlugin()
     ],
   });
 })();
