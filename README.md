@@ -2,7 +2,7 @@
 
 
 
-<img src="./line-bot/public/TeamLogo.png" alt="ENZOAI Logo" width="200"/>
+<img src="./line-bot/public/TeamLogo.png" alt="ENZOAI Logo" width="300"/>
 
 
 ### Fast, Borderless Crypto Payments for Everyone  
