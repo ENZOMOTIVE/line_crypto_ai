@@ -1,6 +1,10 @@
 <div align="center">
 
-# 🤖 ENZOAI  
+
+
+<img src="./line-bot/public/TeamLogo.png" alt="ENZOAI Logo" width="200"/>
+
+
 ### Fast, Borderless Crypto Payments for Everyone  
 
 ---
