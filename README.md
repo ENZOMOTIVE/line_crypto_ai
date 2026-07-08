@@ -1,22 +1,7 @@
-<div align="center">
+## Project Tags
 
-
-
-<img src="./line-bot/public/TeamLogo.png" alt="ENZOAI Logo" width="300"/>
-
-
-### Fast, Borderless Crypto Payments for Everyone  
-
----
-
-[![Made with KiraPay](https://img.shields.io/badge/Made%20with-KiraPay-FF69B4?style=flat&logo=bitcoin&logoColor=white)](https://kirapay.io)
-[![Made with TypeScript](https://img.shields.io/badge/Made%20with-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Powered by GOAT SDK](https://img.shields.io/badge/Powered%20by-GOAT%20SDK-8A2BE2?style=flat&logoColor=white)](https://docs.goat-sdk.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
----
-
-</div>
+- `Agentic AI`
+- `Protocol`
 
 ## 🌍 Overview  
 
@@ -107,5 +92,3 @@ npm ts-node index.ts
 | 💻 Backend       | TypeScript + Node.js      |
 | 🔗 Blockchain    | Base / Ethereum (Sepolia) |
 | 🧠 Framework     | GOAT SDK                  |
-
-
