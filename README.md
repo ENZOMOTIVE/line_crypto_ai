@@ -1,6 +1,9 @@
 <div align="center">
 
+
+
 <img src="./line-bot/public/TeamLogo.png" alt="ENZOAI Logo" width="300"/>
+
 
 ### Fast, Borderless Crypto Payments for Everyone  
 
@@ -59,12 +62,16 @@ With KiraPay, users can **pay from any blockchain**, while merchants receive fun
 git clone https://github.com/ENZOMOTIVE/line_crypto_ai
 ```
 
+
+
 2. Run the following commands from the `typescript` directory:
 ```bash
 cd line-bot
 npm install
 npm build
 ```
+
+
 
 3. Copy the `.env.template` and populate with your values:
 ```bash
@@ -90,6 +97,7 @@ npm ts-node index.ts
 - Receive Crypto currencies
 - Create Autonomoius Payment Gateways Payment with KIRAPAY
 
+
 ## Tech Stack
 | Layer            | Technology                |
 | :--------------- | :------------------------ |
@@ -100,11 +108,4 @@ npm ts-node index.ts
 | 🔗 Blockchain    | Base / Ethereum (Sepolia) |
 | 🧠 Framework     | GOAT SDK                  |
 
-## Project Metadata
-
-| Field | Details |
-| --- | --- |
-| Repository | `ENZOMOTIVE/line_crypto_ai` |
-| Categories | `Agentic AI`, `Protocol` |
-| Primary stack | Node.js, TypeScript |
 
