@@ -1,7 +1,19 @@
-## Project Tags
+<div align="center">
 
-- `Agentic AI`
-- `Protocol`
+<img src="./line-bot/public/TeamLogo.png" alt="ENZOAI Logo" width="300"/>
+
+### Fast, Borderless Crypto Payments for Everyone  
+
+---
+
+[![Made with KiraPay](https://img.shields.io/badge/Made%20with-KiraPay-FF69B4?style=flat&logo=bitcoin&logoColor=white)](https://kirapay.io)
+[![Made with TypeScript](https://img.shields.io/badge/Made%20with-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Powered by GOAT SDK](https://img.shields.io/badge/Powered%20by-GOAT%20SDK-8A2BE2?style=flat&logoColor=white)](https://docs.goat-sdk.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+---
+
+</div>
 
 ## 🌍 Overview  
 
@@ -47,16 +59,12 @@ With KiraPay, users can **pay from any blockchain**, while merchants receive fun
 git clone https://github.com/ENZOMOTIVE/line_crypto_ai
 ```
 
-
-
 2. Run the following commands from the `typescript` directory:
 ```bash
 cd line-bot
 npm install
 npm build
 ```
-
-
 
 3. Copy the `.env.template` and populate with your values:
 ```bash
@@ -82,7 +90,6 @@ npm ts-node index.ts
 - Receive Crypto currencies
 - Create Autonomoius Payment Gateways Payment with KIRAPAY
 
-
 ## Tech Stack
 | Layer            | Technology                |
 | :--------------- | :------------------------ |
@@ -92,3 +99,12 @@ npm ts-node index.ts
 | 💻 Backend       | TypeScript + Node.js      |
 | 🔗 Blockchain    | Base / Ethereum (Sepolia) |
 | 🧠 Framework     | GOAT SDK                  |
+
+## Project Metadata
+
+| Field | Details |
+| --- | --- |
+| Repository | `ENZOMOTIVE/line_crypto_ai` |
+| Categories | `Agentic AI`, `Protocol` |
+| Primary stack | Node.js, TypeScript |
+
